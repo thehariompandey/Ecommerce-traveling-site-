@@ -1,14 +1,81 @@
+<style>
+  .btn-search {
+    background-color: #fe424d;
+    color: white;
+    border-radius: 25px;
+    padding: 0 1rem 0 1rem;
+  }
+  .btn-search :hover {
+    background-color: #fe424d;
+    color: white;
+  }
+
+  .btn-search i {
+    display: inline;
+    margin-right: 0.5rem;
+  }
+  .search-inp {
+    border-radius: 25px;
+    padding: 0.5rem 3rem 0.5rem 3rem;
+    font-size: 1rem;
+  }
+</style>
+
 <nav class="navbar navbar-expand-md bg-body-Light border-bottom sticky-top">
-    <div class="container-fluid">
-      <a class="navbar-brand" href="/"><i class="fa-regular fa-compass"></i></a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup">
-      </button>
-      <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-        <div class="navbar-nav">
-          <a class="nav-link"  href="/">Home</a>
-          <a class="nav-link" href="/listings">All Listings</a>
-          <a class="nav-link" href="/listings/new">Add New Listing</a>
-        </div>
+  <div class="container-fluid">
+    <a class="navbar-brand" href="/listings"
+      ><i class="fa-regular fa-compass"></i
+    ></a>
+    <button
+      class="navbar-toggler"
+      type="button"
+      data-bs-toggle="collapse"
+      data-bs-target="#navbarNavAltMarkup"
+    ></button>
+    <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+      <div class="navbar-nav">
+        <a class="nav-link" href="/listings">Explore</a>
+      </div>
+      
+
+      <div class="navbar-nav ms-auto">
+        <form class="d-flex" role="search">
+          <input
+            class="form-control me-2 search-inp"
+            type="search"
+            placeholder="Search destination"
+          />
+          <div class="dropdown">
+        <button
+          class="btn  dropdown-toggle"
+          type="button"
+          data-bs-toggle="dropdown"
+          aria-expanded="false"
+        >
+          Select Country
+        </button>
+        <ul class="dropdown-menu">
+          <li><a class="dropdown-item" href="#">India</a></li>
+          <li><a class="dropdown-item" href="#">United States</a></li>
+          <li><a class="dropdown-item" href="#">Canada</a></li>
+          <li><a class="dropdown-item" href="#">Germany</a></li>
+          <li><a class="dropdown-item" href="#">Australia</a></li>
+        </ul>
+      </div>
+          <button class="btn btn-search" type="submit">
+            <i class="fa-solid fa-magnifying-glass"></i>Search
+          </button>
+        </form>
+      </div>
+      <div class="navbar-nav ms-auto">
+        <a class="nav-link" href="/listings/new">Add your place</a>
+        <% if(!currUser) { %>
+        <a class="nav-link" href="/signup">Signup</a>
+        <a class="nav-link" href="/login"> Login</a>
+        <% } %> <% if(currUser) { %>
+        <a class="nav-link" href="/logout">Logout</a>
+        <% } %>
       </div>
     </div>
-  </nav>
+  </div>
+</nav>
