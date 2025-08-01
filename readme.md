@@ -1,26 +1,48 @@
-# E-commerce Website 🛒  
+# 🧭 Wandurlust
 
-## Description  
-A full-stack e-commerce platform with a seamless shopping experience.
+A dynamic travel listing and exploration web application built using **Node.js**, **Express**, **MongoDB**, and **EJS**. Users can browse, create, edit, and delete travel listings, complete with images and interactive maps.
 
-## Screenshots  
-### Homepage  
-![Homepage](Screenshot (282).png)  
+---
 
-### Product Page  
-![Product Page](Screenshot (283).png)  
+## 🚀 Features
 
-## Tech Stack  
-- **Frontend:** React, Redux, Tailwind CSS  
-- **Backend:** Node.js, Express.js  
-- **Database:** MongoDB  
-- **Authentication:** JWT  
+- 🔐 User Authentication (Register/Login/Logout)
+- 🧳 Create, edit, and delete travel listings
+- 🗺️ View listing location on interactive maps (Mapbox)
+- 🖼️ Upload and manage listing images (Cloudinary)
+- 📝 Review system for listings
+- 🧹 Clean and responsive UI using Bootstrap
+- 🛡️ Secure and production-ready (Sanitization, error handling)
 
-## Installation  
-1. Clone the repository  
-   ```bash
-   git clone https://github.com/your-username/ecommerce-project.git
-   cd ecommerce-project
+---
+
+## 📸 Demo
+
+> Hosted on **Render**  
+[🔗 Live Website](https://your-wandurlust-link.com)
+
+---
+
+## 🛠️ Tech Stack
+
+- **Backend**: Node.js, Express.js
+- **Frontend**: EJS, Bootstrap
+- **Database**: MongoDB with Mongoose
+- **Authentication**: Passport.js
+- **File Uploads**: Multer + Cloudinary
+- **Geocoding & Maps**: Mapbox
+- **Hosting**: Render
+
+---
+
+## 🧑‍💻 Installation
+
+1. **Clone the repo**
+
+```bash
+git clone https://github.com/your-username/wandurlust.git
+cd wandurlust
+
 
 
 ## 2.Install dependencies
