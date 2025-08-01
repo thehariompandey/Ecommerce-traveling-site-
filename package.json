@@ -1,11 +1,12 @@
 {
   "engines": {
-    "node": "v22.14.0"
+    "node": "22.14.0"
   },
   "name": "wanderlust",
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
+    "start": "node app.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
@@ -24,7 +25,7 @@
     "express-session": "^1.18.1",
     "joi": "^17.13.3",
     "method-override": "^3.0.0",
-    "mongoose": "^8.9.3",
+    "mongoose": "^7.6.1",
     "multer": "^2.0.1",
     "multer-storage-cloudinary": "^4.0.0",
     "passport": "^0.7.0",
